@@ -1,0 +1,15 @@
+declare global {
+  interface String {
+    words(): string[];
+  }
+}
+
+export function words(xs: string): string[] {
+  return xs.split(' ');
+}
+
+export function inherit() {
+  String.prototype.words = function (): string[] {
+    return words(this as string);
+  };
+}
