@@ -2,12 +2,27 @@
   "compilerOptions": {
     "target": "es2016",
     "module": "commonjs",
+    "lib": ["esnext"],
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
-    "typeRoots": [
-      "./src"
-    ]
-  }
+    "baseUrl": ".",
+    "paths": {
+      "array": [
+        "./src/array"
+      ],
+      "string": [
+        "./src/string"
+      ],
+    },
+  },
+  "include": [
+    "./src/types.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
