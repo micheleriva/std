@@ -1,9 +1,3 @@
-declare global {
-  interface String {
-    words(): string[];
-  }
-}
-
 export function words(xs: string): string[] {
   return xs.split(' ');
 }

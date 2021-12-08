@@ -1,9 +1,3 @@
-declare global {
-  interface String {
-    lines(): string[];
-  }
-}
-
 export function lines(xs: string): string[] {
   return xs.split('\n');
 }
