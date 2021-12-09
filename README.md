@@ -85,6 +85,13 @@ string!
 str.lines(); // => ['Hello!', 'I am a multiline', 'string!']
 ```
 
+### `String.toList`
+Converts a string into a list of characters.
+
+```js
+"Hello, world!".toList(); // => ['H', 'e', 'l', 'l', 'o', ',', ' ', 'w', 'o', 'r', 'l', 'd', '!']
+```
+
 ### `String.words`
 Returns the words in a string.
 

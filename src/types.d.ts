@@ -15,6 +15,7 @@ declare global {
 
   interface String {
     words(): string[];
+    toList(): string[];
     lines(): string[];
   }
 }
