@@ -14,6 +14,20 @@ Works similar to `Promise.then`, but is synchronous.
 [1, 2, 3].chain(xs => [...xs, 4]); // => [1, 2, 3, 4]
 ```
 
+### `Array.head`
+Returns the head of an array.
+
+```js
+[1, 2, 3].head(); // => [1]
+```
+
+### `Array.last`
+Returns the last element of an array.
+
+```js
+[1, 2, 3].last(); // => [3]
+```
+
 ### `Array.product`
 Returns the product of all the number inside an array of numbers.
 
@@ -21,11 +35,28 @@ Returns the product of all the number inside an array of numbers.
 [1, 2, 3, 4].product(); // => 12
 ```
 
+### `Array.range`
+Returns an array of numbers from `start` to `end` (inclusive). <br />
+You can also specify a step size.
+
+```js
+[].range(1, 5); // => [1, 2, 3, 4, 5]
+[].range(2, 10, 2); // => [2, 4, 6, 8, 10]
+[].range(1.5, 5.5, 0.5); // => [1.5, 2.5, 3.5, 4.5, 5.5]
+```
+
 ### `Array.sum`
 Returns the sum of all the number inside an array of numbers.
 
 ```js
 [1, 2, 3, 4].product(); // => 10
+```
+
+### `Array.tail`
+Returns the tail of an array.
+
+```js
+[1, 2, 3].tail(); // => [2, 3]
 ```
 
 ### `Array.transpose`
