@@ -2,7 +2,10 @@
   "name": "std",
   "version": "0.0.1",
   "description": "My personal TypeScript and JavaScript standard library",
-  "main": "index.js",
+  "main": "build",
+  "files": [
+    "build"
+  ],
   "repository": "https://github.com/micheleriva/std",
   "author": "Michele Riva <ciao@micheleriva.it>",
   "license": "MIT",
