@@ -7,3 +7,5 @@ export function inherit() {
     return words(this as string);
   };
 }
+
+export default words;

@@ -7,3 +7,5 @@ export function inherit() {
     return product(this);
   };
 }
+
+export default product;

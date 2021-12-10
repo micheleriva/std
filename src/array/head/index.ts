@@ -7,3 +7,5 @@ export function inherit() {
     return head(this as T[]);
   };
 }
+
+export default head;

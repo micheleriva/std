@@ -8,3 +8,5 @@ export function inherit() {
     return tail(this as T[]);
   };
 }
+
+export default tail;

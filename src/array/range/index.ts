@@ -7,3 +7,5 @@ export function inherit() {
     return range(from, to, step);
   };
 }
+
+export default range;

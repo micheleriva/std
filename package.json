@@ -6,15 +6,25 @@
   "files": [
     "build"
   ],
+  "types": "build/types",
   "repository": "https://github.com/micheleriva/std",
   "author": "Michele Riva <ciao@micheleriva.it>",
   "license": "MIT",
   "private": false,
   "scripts": {
+    "build:declarations": "tsc --declaration --outDir build/types",
+    "build": "node lib/build.js && npm run build:declarations",
     "lint": "prettier --write \"src/**/**/*.{ts,js}\" && tslint -c tslint.json 'src/**/*.{ts,js}' --fix",
     "test": "jest --coverage",
     "commit": "git-cz"
   },
+  "exports": {
+    ".": {
+      "import": "./build/esm",
+      "require": "./build/cjs"
+    }
+  },
+  "module": "./build/esm",
   "devDependencies": {
     "@swc/core": "^1.2.118",
     "@swc/jest": "^0.2.12",

@@ -11,6 +11,7 @@ declare global {
     tail<T>(): T[];
     transpose<T>(): T[][];
     union<T>(array: T[]): T[];
+    zip(...array: any[]): any[];
   }
 
   interface String {

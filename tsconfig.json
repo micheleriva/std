@@ -4,6 +4,8 @@
     "module": "commonjs",
     "lib": ["esnext"],
     "esModuleInterop": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,

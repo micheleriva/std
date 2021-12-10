@@ -10,3 +10,5 @@ export function inherit() {
     return chain(this as T[], predicate);
   };
 }
+
+export default chain;

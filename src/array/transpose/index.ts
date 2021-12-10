@@ -7,3 +7,5 @@ export function inherit() {
     return transpose(this as T[][]);
   };
 }
+
+export default transpose;

@@ -7,3 +7,5 @@ export function inherit() {
     return union(this as T[], array);
   };
 }
+
+export default union;

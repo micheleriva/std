@@ -7,3 +7,5 @@ export function inherit() {
     return lines(this as string);
   };
 }
+
+export default lines;

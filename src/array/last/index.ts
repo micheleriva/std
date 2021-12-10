@@ -7,3 +7,5 @@ export function inherit() {
     return last(this as T[]);
   };
 }
+
+export default last;

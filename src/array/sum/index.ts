@@ -7,3 +7,5 @@ export function inherit() {
     return sum(this);
   };
 }
+
+export default sum;

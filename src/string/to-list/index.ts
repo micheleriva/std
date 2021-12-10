@@ -7,3 +7,5 @@ export function inherit() {
     return this.split('');
   };
 }
+
+export default toList;
