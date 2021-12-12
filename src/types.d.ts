@@ -19,4 +19,8 @@ declare global {
     toList(): string[];
     lines(): string[];
   }
+
+  interface Function {
+      rec<T>(this: T, ...args: any[]): T;
+  }
 }

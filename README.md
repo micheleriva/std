@@ -99,5 +99,31 @@ Returns the words in a string.
 "Hello, world!".words(); // => ["Hello,", "world!"]
 ```
 
+### `Function.rec`
+Implements tail call elimination via trampolining.
+
+**This will throw**:
+```js
+const sumBelow = (number, sum = 0) => (
+  number === 0
+    ? sum
+    : sumBelow(number - 1, sum + number)
+)
+
+sumBelow(1231300);
+```
+
+**Just use the `rec` keyword to make it recursive**:
+```js
+const sumBelow = (number, sum = 0) => (
+  number === 0
+    ? sum
+    : () => sumBelow(number - 1, sum + number);
+  //  ^ please note that we're now returning a function
+)
+
+sumBelow.rec(1231300);
+```
+
 # License
 [MIT](/LICENSE.md)
