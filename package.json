@@ -1,6 +1,6 @@
 {
   "name": "@micheleriva/std",
-  "version": "0.0.1-rc3",
+  "version": "0.0.1-rc4",
   "description": "My personal TypeScript and JavaScript standard library",
   "main": "build/index.js",
   "files": [
