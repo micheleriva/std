@@ -118,7 +118,7 @@ sumBelow(1231300);
 const sumBelow = (number, sum = 0) => (
   number === 0
     ? sum
-    : () => sumBelow(number - 1, sum + number);
+    : () => sumBelow(number - 1, sum + number)
   //  ^ please note that we're now returning a function
 )
 
