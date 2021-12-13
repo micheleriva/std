@@ -14,6 +14,10 @@ declare global {
     zip(...array: any[]): any[];
   }
 
+  interface Object {
+      omit<T>(key: string): T;
+  }
+
   interface String {
     words(): string[];
     toList(): string[];
