@@ -15,7 +15,7 @@ declare global {
   }
 
   interface Object {
-      omit<T>(key: string): T;
+    omit<T>(key: string): T;
   }
 
   interface String {
@@ -25,6 +25,6 @@ declare global {
   }
 
   interface Function {
-      rec<T>(this: T, ...args: any[]): T;
+    rec<T>(this: T, ...args: any[]): T;
   }
 }

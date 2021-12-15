@@ -3,7 +3,7 @@ export function sum(arr: number[]): number {
 }
 
 export function inherit() {
-  Array.prototype.sum = function(): number {
+  Array.prototype.sum = function (): number {
     return sum(this);
   };
 }
