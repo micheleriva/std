@@ -1,6 +1,6 @@
 export function tail<T>(array: T[]): T[] {
-  const [_, ...tail] = array;
-  return tail ?? [];
+  const [_, ...rest] = array;
+  return rest ?? [];
 }
 
 export function inherit() {
