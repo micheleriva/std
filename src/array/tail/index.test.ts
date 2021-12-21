@@ -13,5 +13,6 @@ describe('inherited tail', () => {
   it('should correctly extend the array class', () => {
     expect(Array.prototype.tail).toBeDefined();
     expect([1, 2, 3].tail()).toStrictEqual([2, 3]);
+    expect([].tail()).toStrictEqual([]);
   });
 });

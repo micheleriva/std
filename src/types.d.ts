@@ -3,12 +3,14 @@ import type { Predicate } from './array/chain';
 declare global {
   interface Array<T> {
     chain<T, A>(predicate: Predicate<T, A>): A;
+    drop<T>(n: number): T[];
     head<T>(): T;
     last<T>(): T | undefined;
     product(): number;
     range(from: number, to: number, step?: number): number[];
     sum(): number;
     tail<T>(): T[];
+    take<T>(n: number): T[];
     transpose<T>(): T[][];
     union<T>(array: T[]): T[];
     zip(...array: any[]): any[];
