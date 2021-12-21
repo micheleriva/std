@@ -10,6 +10,7 @@ declare global {
     range(from: number, to: number, step?: number): number[];
     sum(): number;
     tail<T>(): T[];
+    tails<T>(): T[][];
     take<T>(n: number): T[];
     transpose<T>(): T[][];
     union<T>(array: T[]): T[];

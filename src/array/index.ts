@@ -6,6 +6,7 @@ import * as product from './product';
 import * as range from './range';
 import * as sum from './sum';
 import * as tail from './tail';
+import * as tails from './tails';
 import * as take from './take';
 import * as transpose from './transpose';
 import * as union from './union';
@@ -20,6 +21,7 @@ export function inherit() {
   range.inherit();
   sum.inherit();
   tail.inherit();
+  tails.inherit();
   take.inherit();
   transpose.inherit();
   union.inherit();
@@ -35,6 +37,7 @@ export default {
   range,
   sum,
   tail,
+  tails,
   take,
   transpose,
   union,
