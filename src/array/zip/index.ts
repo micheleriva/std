@@ -1,4 +1,4 @@
-export function zip(arrays: any[][]): any[][] {
+export function zip<T>(arrays: T[][]): T[][] {
   return arrays.length > 0
     ? arrays
         .reduce((prev: any[], curr: any[]) => (prev.length < curr.length ? prev : curr))
@@ -7,7 +7,7 @@ export function zip(arrays: any[][]): any[][] {
 }
 
 export function inherit() {
-  Array.prototype.zip = function (...arrays: any[]): any[][] {
+  Array.prototype.zip = function <T>(...arrays: T[][]): T[][] {
     return zip([this, ...arrays]);
   };
 }
