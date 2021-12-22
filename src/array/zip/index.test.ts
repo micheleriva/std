@@ -13,6 +13,23 @@ describe('zip', () => {
     ]);
   });
 
+  it('should correctly zip arrays with different lengths', () => {
+    const a = [1, 2, 3];
+    const b = [4, 5];
+    const c = [7, 8, 9];
+    const zipped = zip([a, b, c]);
+    expect(zipped).toStrictEqual([
+      [1, 4, 7],
+      [2, 5, 8],
+    ]);
+  });
+
+  it('should correctly zip arrays with at least one empty', () => {
+    const b = [4, 5, 6];
+    const zipped = zip([[], b]);
+    expect(zipped).toStrictEqual([]);
+  });
+
   it('should correctly zip into polymorphic arrays', () => {
     const a = [1, 2, 3];
     const b = ['one', 'two', 'three'];
