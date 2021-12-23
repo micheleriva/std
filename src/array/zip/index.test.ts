@@ -33,7 +33,7 @@ describe('zip', () => {
   it('should correctly zip into polymorphic arrays', () => {
     const a = [1, 2, 3];
     const b = ['one', 'two', 'three'];
-    const zipped = zip([a, b]);
+    const zipped = zip<number | string>([a, b]);
     expect(zipped).toStrictEqual([
       [1, 'one'],
       [2, 'two'],
@@ -45,7 +45,7 @@ describe('zip', () => {
     const a = [1, 2, 3];
     const b = ['one', 'two', 'three'];
     const c = [true, false, true];
-    const zipped = zip([a, b, c]);
+    const zipped = zip<number | string | boolean>([a, b, c]);
     expect(zipped).toStrictEqual([
       [1, 'one', true],
       [2, 'two', false],
