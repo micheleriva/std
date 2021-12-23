@@ -1,6 +1,6 @@
 export function tails<T>(arr: T[]): T[][] {
   return arr
-    .reduce((acc, _, i) => {
+    .reduce((acc: T[][], _, i: number) => {
       return [...acc, arr.slice(i)];
     }, [] as T[][])
     .concat([[]]);
