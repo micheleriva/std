@@ -15,6 +15,7 @@ declare global {
     transpose<T>(): T[][];
     union<T>(array: T[]): T[];
     zip(...array: any[]): any[];
+    unzip(...array: T[]): T[];
   }
 
   interface Object {
