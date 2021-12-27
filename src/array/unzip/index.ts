@@ -1,5 +1,5 @@
 export function unzip<T>(arrays: T[][]): T[][] {
-  return arrays[0]?.map((_: any, i: number) => arrays.map((array: any[]) => array[i])) ?? [];
+  return arrays[0]?.map((_: T, i: number) => arrays.map((array: T[]) => array[i])) ?? [];
 }
 
 export function inherit() {
