@@ -11,6 +11,7 @@ import * as take from './take';
 import * as transpose from './transpose';
 import * as union from './union';
 import * as zip from './zip';
+import * as unzip from './unzip';
 
 export function inherit() {
   chain.inherit();
@@ -26,6 +27,7 @@ export function inherit() {
   transpose.inherit();
   union.inherit();
   zip.inherit();
+  unzip.inherit();
 }
 
 export default {
@@ -42,4 +44,5 @@ export default {
   transpose,
   union,
   zip,
+  unzip,
 };

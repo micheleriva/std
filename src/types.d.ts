@@ -14,7 +14,8 @@ declare global {
     take<T>(n: number): T[];
     transpose<T>(): T[][];
     union<T>(array: T[]): T[];
-    zip(...array: any[]): any[];
+    zip<T>(...array: T[][]): T[][];
+    unzip<T>(): T[][];
   }
 
   interface Object {
