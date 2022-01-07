@@ -13,7 +13,7 @@ describe('sum', () => {
   });
 });
 
-describe('inherited product', () => {
+describe('inherited sum', () => {
   inherit();
   it('should correctly extend the array class', () => {
     expect([1].sum()).toBe(1);
